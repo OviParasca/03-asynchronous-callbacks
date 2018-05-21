@@ -23,8 +23,4 @@ describe("File Reader Module", () => {
         });
     });
 
-    it('check if the argv length is greater than 2 before attempting to read files', () => {
-        expect(process.argv.length > 2).toEqual(true);
-    });
-
 });
