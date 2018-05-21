@@ -1,7 +1,6 @@
 'use strict';
 
 const filereader = require('./lib/reader.js');
-let file  = `${__dirname}/data/file1.txt`;
 
 let doSomething = (err, data) => {
   if (err) {
@@ -10,4 +9,4 @@ let doSomething = (err, data) => {
   console.log(data);
 };
 
-filereader(file, doSomething);
+filereader.readFiles([process.argv], doSomething);
