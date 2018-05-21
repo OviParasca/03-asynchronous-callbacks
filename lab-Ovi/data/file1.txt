@@ -1,0 +1,1 @@
+testing a string inside file1.txt
